@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.8e0ed7e7.css",
-    "main.js": "/react-gh-pages/static/js/main.544c55e2.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.8e0ed7e7.css.map": "/react-gh-pages/static/css/main.8e0ed7e7.css.map",
-    "main.544c55e2.js.map": "/react-gh-pages/static/js/main.544c55e2.js.map"
+    "main.css": "/Zoo_Database/static/css/main.8e0ed7e7.css",
+    "main.js": "/Zoo_Database/static/js/main.544c55e2.js",
+    "index.html": "/Zoo_Database/index.html",
+    "main.8e0ed7e7.css.map": "/Zoo_Database/static/css/main.8e0ed7e7.css.map",
+    "main.544c55e2.js.map": "/Zoo_Database/static/js/main.544c55e2.js.map"
   },
   "entrypoints": [
     "static/css/main.8e0ed7e7.css",
