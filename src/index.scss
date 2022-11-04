@@ -25,6 +25,7 @@
 
     .title{
         font-size: 2rem;
+        color: #483838;
     }
 
     .generate{
@@ -65,12 +66,32 @@
 
 }
 
+// Theme Selector
+
+.themeSelector{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 1200px;
+    margin: 280px auto;
+}
+
+.theme-buttons div {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+    border-radius: 50%;
+}
+
+
 // Card
 
 .titleContainer{
     @include flex;
     padding-top: 0.5em;
-    height: 90px;
+    height: 70px;
 }
 
 .info{
@@ -95,20 +116,20 @@
 }
 
 .backType{
-    margin-bottom: 1.5em;
+    margin-bottom: 1.1em;
 }
 
 .backLife{
-    margin-bottom: 1.5em;
+    margin-bottom: 1.1em;
 }
 
 .location{
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    margin-top: 1.1em;
+    margin-bottom: 1.1em;
 }
 
 .habitat{
-    margin-bottom: 1.5em;
+    margin-bottom: 1.1em;
 }
 
 .animalName{

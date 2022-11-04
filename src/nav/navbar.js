@@ -1,9 +1,13 @@
 import React from "react"
+import { useContext } from 'react';
+import { useTheme } from "../hooks/useTheme";
 
 export default function Navbar(props){
 
+    const {color} = useTheme()
+
     return (
-        <div className = "nav-container">
+        <div className = "nav-container" style = {{background: color}}>
             <h1 className = "title">Zoo Database</h1>
             <button className = "generate" onClick = {props.getAnimals}>Discover New Animals</button>
             <div className = "search">

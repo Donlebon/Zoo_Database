@@ -1,7 +1,11 @@
 import React from "react";
+import { useContext } from 'react';
+import { useTheme } from "../hooks/useTheme";
+
 
 
 export default function Card(props){
+
     return (
         <div className = "animalContainer">
             <div className = "card" onClick = {(e) => props.flipper(e)}>
@@ -35,20 +39,3 @@ export default function Card(props){
     )
 
 }
-// <div className = "animalContainer">
-//         {props.animaldata.map(animal => (
-//             <div key = {animal.id} className = "card" >
-                
-//                     <img className = "animalPic" src = {animal.image_link} alt = "Animal Picture"/>
-//                     <div className = "titleContainer">
-//                         <h2 className = "animalName">{animal.name}</h2>
-//                     </div>
-//                     <div className = "info">
-//                         <p className = "type">Type: {animal.animal_type}</p>
-//                         <p className = "life">Lifespan: {animal.lifespan} years</p>
-//                         <p className = "weight">Weight: {animal.weight_min} - {animal.weight_max} lbs</p>
-//                         <p onClick = {() => handleClick(animal.id)} className = "details">More Info...</p>
-//                     </div>
-//             </div>
-//         ))}    
-//         </div>
