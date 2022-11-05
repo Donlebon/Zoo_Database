@@ -7,6 +7,8 @@ export const ThemeContext = createContext()
         switch(action.type){
             case 'CHANGE_COLOR' : 
                 return {...state, color: action.payload}
+            case "CHANGE_MODE" :
+                return {...state, mode: action.payload}
             default:
                 return state
         }
@@ -15,15 +17,20 @@ export const ThemeContext = createContext()
 export function ThemeProvider({children}){
 
     const [state, dispatch] = useReducer(themeReducer, {
-        color: "#3C4048"
+        color: "#FFFAD7",
+        mode: "light"
     })
 
     const changeColor = (color) => {
         dispatch({type: 'CHANGE_COLOR', payload: color})
     }
 
+    const changeMode = (mode) => {
+        dispatch({type: "CHANGE_MODE", payload: mode })
+    }
+
     return (
-        <ThemeContext.Provider value = {{...state, changeColor}}>
+        <ThemeContext.Provider value = {{...state, changeColor, changeMode}}>
             {children}
         </ThemeContext.Provider>
 

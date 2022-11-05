@@ -4,8 +4,11 @@ import Navbar from './nav/navbar';
 import Card from './Cards/Cards';
 import { useFetch } from './hooks/useFetch';
 import ThemeSelector from './Components/ThemeSelector';
+import { useTheme } from './hooks/useTheme';
 
 export default function App(){
+
+  const {mode} = useTheme() 
 
   const {data, isPending, animalGroup, setCount, setData, setanimalGroup, testing} = useFetch("https://zoo-animal-api.herokuapp.com/animals/rand/8")
 
@@ -71,7 +74,7 @@ export default function App(){
 
 
   return (
-      <div className = "main">
+      <div className = {mode === "light" ? "light" : "dark"}>
         <Navbar 
         type = {animalGroup}
         change = {(e) => handleChange(e)}

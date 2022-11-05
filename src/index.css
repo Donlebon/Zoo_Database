@@ -9,16 +9,20 @@
   text-align: center;
 }
 
+.dark {
+  background-color: #515151;
+}
+
 .nav-container {
   display: flex;
   background-color: #749F82;
   align-items: center;
   justify-content: space-between;
-  padding: 2.5em 3.5em;
+  padding: 2.5em 2.5em;
   color: #FDFAF6;
 }
 .nav-container .title {
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: #483838;
 }
 .nav-container .generate {
@@ -48,24 +52,31 @@
   padding: 0.2em 0.5em;
 }
 .nav-container .animaltype {
+  color: #483838;
+  font-size: 1.3rem;
   margin-right: 0.2em;
 }
 
 .themeSelector {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  max-width: 1200px;
-  margin: 280px auto;
+  margin-right: 3em;
+  margin-top: 0.5em;
 }
 
-.theme-buttons div {
+.color-button {
   display: inline-block;
   width: 20px;
   height: 20px;
   cursor: pointer;
-  margin-left: 15px;
+  margin-left: 1em;
   border-radius: 50%;
+}
+
+.mode {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
 }
 
 .titleContainer {
@@ -183,5 +194,9 @@
   }
   .generate {
     margin-bottom: 2.2em;
+  }
+  .themeSelector {
+    justify-content: center;
+    margin-right: 1em;
   }
 }/*# sourceMappingURL=index.css.map */

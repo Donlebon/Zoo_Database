@@ -6,10 +6,12 @@ import { useTheme } from "../hooks/useTheme";
 
 export default function Card(props){
 
+    const {mode} = useTheme()
+
     return (
         <div className = "animalContainer">
             <div className = "card" onClick = {(e) => props.flipper(e)}>
-                <div className = "front">
+                <div className = {`front ${mode}`}>
                     <img className = "animalPic" src = {props.animalData.image_link} alt = "Animal Picture"/>
                     <div className = "titleContainer">
                         <h2 className = "animalName">{props.animalData.name}</h2>

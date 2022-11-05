@@ -1,14 +1,31 @@
 import React from "react"
 import { useContext } from 'react';
 import { useTheme } from "../hooks/useTheme";
+import darkmode from "../darkmode.png"
+import lightmode from "../lightmode.png"
+
+
 
 export default function Navbar(props){
 
-    const {color} = useTheme()
+    const {color, changeMode, mode} = useTheme()
+
+    const toggleMode = () => {
+        changeMode(mode === "light" ? "dark" : "light")
+    }
+
+    console.log(mode)
 
     return (
         <div className = "nav-container" style = {{background: color}}>
-            <h1 className = "title">Zoo Database</h1>
+            <h1 className = "title">Z 
+            <span>
+            <img className = "mode"
+            onClick = {toggleMode}
+            src = {mode === "light" ? darkmode : lightmode} alt = "dark" 
+            />
+            </span>
+            o Database</h1>
             <button className = "generate" onClick = {props.getAnimals}>Discover New Animals</button>
             <div className = "search">
             <label htmlFor = "animalType" className = "animaltype" >Animal Type: </label>
