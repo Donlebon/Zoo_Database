@@ -11,6 +11,7 @@
 
 .dark {
   background-color: #515151;
+  min-height: 100vh;
 }
 
 .nav-container {
@@ -60,8 +61,8 @@
 .themeSelector {
   display: flex;
   justify-content: flex-end;
-  margin-right: 3em;
-  margin-top: 0.5em;
+  padding-right: 2.5em;
+  padding-top: 0.5em;
 }
 
 .color-button {
@@ -69,7 +70,7 @@
   width: 20px;
   height: 20px;
   cursor: pointer;
-  margin-left: 1em;
+  margin-left: 1.5em;
   border-radius: 50%;
 }
 
@@ -197,6 +198,9 @@
   }
   .themeSelector {
     justify-content: center;
-    margin-right: 1em;
+    margin-right: 0em;
+  }
+  .color-button {
+    margin-left: 2em;
   }
 }/*# sourceMappingURL=index.css.map */

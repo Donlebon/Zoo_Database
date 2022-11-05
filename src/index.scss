@@ -11,6 +11,7 @@
 
 .dark{
     background-color: #515151;
+    min-height: 100vh;
 }
 
 // Navbar
@@ -77,8 +78,8 @@
 .themeSelector{
     @include flex;
     justify-content: flex-end;
-    margin-right: 3em;
-    margin-top: 0.5em;
+    padding-right: 2.5em;
+    padding-top: 0.5em;
 }
 
 .color-button {
@@ -86,7 +87,7 @@
     width: 20px;
     height: 20px;
     cursor: pointer;
-    margin-left: 1em;
+    margin-left: 1.5em;
     border-radius: 50%;
 }
 
@@ -225,8 +226,11 @@ box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
 
     .themeSelector{
         justify-content: center;
-        margin-right: 1em;
+        margin-right: 0em;
     }
 
+    .color-button{
+        margin-left: 2em;
+    }
    
 }
